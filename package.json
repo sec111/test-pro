@@ -1,0 +1,33 @@
+{
+  "name": "test-pro",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "author": "徐珊珊 <sec235870@163.com>",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.6.2",
+    "element-ui": "^2.13.2",
+    "node-sass": "^4.14.1",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/axios": "^5.10.3",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "less": "^3.11.2",
+    "less-loader": "^6.1.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

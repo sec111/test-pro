@@ -1,0 +1,90 @@
+[
+  {
+    "dbid": "829",
+    "dbmc": "玛尔挡",
+    "damType": "钢筋混凝土面板堆石坝",
+    "height": "211.00",
+    "normalWaterLevel": "3275.00",
+    "riverid": "676",
+    "topLevel": "3280.01",
+    "damDistance": "-233.85",
+    "damState": "在建"
+  },
+  {
+    "dbid": "832",
+    "dbmc": "尔多",
+    "damType": "",
+    "height": "80.01",
+    "normalWaterLevel": "3078.00",
+    "riverid": "676",
+    "topLevel": "3088.01",
+    "damDistance": "-205.61",
+    "damState": "在建"
+  },
+  {
+    "dbid": "828",
+    "dbmc": "茨哈峡",
+    "damType": "",
+    "height": "100.00",
+    "normalWaterLevel": "2980.00",
+    "riverid": "676",
+    "topLevel": "2998.00",
+    "damDistance": "-158.66",
+    "damState": "待定"
+  },
+  {
+    "dbid": "551",
+    "dbmc": "班多",
+    "damType": "混凝土重力坝",
+    "height": "78.72",
+    "normalWaterLevel": "2760.00",
+    "riverid": "676",
+    "topLevel": "2764.00",
+    "damDistance": "-114.91",
+    "damState": "已注册"
+  },
+  {
+    "dbid": "371",
+    "dbmc": "龙羊峡",
+    "damType": "混凝土重力拱坝",
+    "height": "178.00",
+    "normalWaterLevel": "2600.00",
+    "riverid": "676",
+    "topLevel": "2610.00",
+    "damDistance": "24.65",
+    "damState": "已建"
+  },
+  {
+    "dbid": "301",
+    "dbmc": "刘家峡",
+    "damType": "",
+    "height": "147.00",
+    "normalWaterLevel": "1735.00",
+    "riverid": "676",
+    "topLevel": "1739.00",
+    "damDistance": "208.17",
+    "damState": "待定"
+  },
+  {
+    "dbid": "579",
+    "dbmc": "柴家峡",
+    "damType": "混凝土重力坝",
+    "height": "234.20",
+    "normalWaterLevel": "1550.50",
+    "riverid": "676",
+    "topLevel": "1555.00",
+    "damDistance": "253.23",
+    "damState": "已注册"
+  },
+  {
+    "dbid": "361",
+    "dbmc": "青铜峡",
+    "damType": "混凝土重力拱坝",
+    "height": "178.00",
+    "normalWaterLevel": "1156.00",
+    "riverid": "676",
+    "topLevel": "1160.20",
+    "damDistance": "571.86",
+    "damState": "已建"
+  }
+]
