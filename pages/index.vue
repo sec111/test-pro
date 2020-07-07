@@ -68,7 +68,9 @@
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
+
+import axios from 'axios';
+import AppLogo from '~/components/AppLogo.vue';
 
 export default {
   components: {
@@ -80,6 +82,8 @@ export default {
       inputContent: '',
       inputContent2: ''
     }
+  },
+  asyncData() {
   },
   watch: {
     inputContent() {
@@ -126,7 +130,25 @@ export default {
     }
   },
   mounted() {
+    console.log('测试axios');
+    // Uncaught (in promise) Error: Request failed with status code 404
 
+    // 解决办法
+    // var instance = axios.create({ headers: {'content-type': 'application/x-www-form-urlencoded'} });
+    // instance.post(`url`, params).then(res => res.data);
+
+    // 后台接收不到传入参数解决方法：
+    // var qs=require('qs');
+    // var instance = axios.create({ headers: {'content-type': 'application/x-www-form-urlencoded'} });
+    // instance.post(`url`, qs.stringify(params)).then(res => res.data);
+
+    axios.get(`/api`).then((res) => {
+      console.log(1111111111, res.data);
+    });
+
+    // axios.get(`http://localhost:1337`).then((res) => {
+    //   console.log(1111111111, res.data);
+    // });
   }
 }
 </script>

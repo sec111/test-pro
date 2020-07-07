@@ -81,7 +81,7 @@
       <p>坝高(m)： {{Number(selectedInfo.height).toFixed(2)}}</p>
       <p>正常蓄水位(m)： {{Number(selectedInfo.normalWaterLevel).toFixed(2)}}</p>
     </div>
-    <button @click="jumpPage">点点</button>
+    <button @click="jumpPage">点击跳转到示例页面</button>
   </div>
 </template>
 <script>

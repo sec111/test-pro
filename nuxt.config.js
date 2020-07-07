@@ -1,3 +1,4 @@
+var webpack = require('webpack');
 module.exports = {
   /*
   ** Headers of the page
@@ -41,10 +42,34 @@ module.exports = {
     }
   },
   plugins: [
+    '@/plugins/axios',
+　　{src: '@/plugins/common.js', ssr: false},
+    {src: '~/plugins/ElementUI', ssr: true },
+    {src:"~/plugins/axios.js", ssr:false},
     '~/plugins/ant-design-vue/ant-design-vue'
   ],
   modules: [
+    '@nuxtjs/style-resources',
     '@nuxtjs/axios',
-  ]
+    '@nuxtjs/proxy'
+  ],
+  axios: {
+    proxy: true,
+    prefix: '/api', // baseURL
+    credentials: true
+  },
+  proxy: {
+    '/api/': {
+      target: 'http://localhost:1337',
+      pathRewrite: {
+        '^/api/': ''
+      },
+      headers: {
+        Origin: 'http://localhost:1337',
+        Connection: 'keep-alive'
+        // 'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    }
+  }
 }
 
