@@ -60,6 +60,9 @@
         <nuxt-link to="/ex/svgChart">
           <a-button type="primary">svg图表</a-button>
         </nuxt-link>
+        <nuxt-link to="/cssHover">
+          <a-button shape="round">hover</a-button>
+        </nuxt-link>
         <!-- lodash -->
         <!-- fecha -->
       </div>
@@ -142,6 +145,7 @@ export default {
     // var instance = axios.create({ headers: {'content-type': 'application/x-www-form-urlencoded'} });
     // instance.post(`url`, qs.stringify(params)).then(res => res.data);
 
+    console.log('axios', axios);
     axios.get(`/api`).then((res) => {
       console.log(1111111111, res.data);
     });

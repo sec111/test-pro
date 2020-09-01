@@ -2,11 +2,11 @@
   <div class="gis_Content">
     <a-tabs default-active-key="1" @change="callback">
       <a-tab-pane key="1" tab="leaflet">
-        <div>
+        <div class="leaflet_content">
           gis
         </div>
       </a-tab-pane>
-      <a-tab-pane key="2" tab="Tab 2" force-render>
+      <a-tab-pane key="2" tab="openlayer" force-render>
         <div>
           gis
         </div>
@@ -30,11 +30,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 .gis_Content{
-  min-height: 40vh;
-  width: calc(100% - 20%);
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  .leaflet_content{
+    width: 100%;
+  }
 }
 </style>

@@ -51,7 +51,7 @@
 // }
 
 // 3.
-// import Qs from 'qs';
+import Qs from 'qs';
  
 export default function (app) {
     let axios = app.$axios; 

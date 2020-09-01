@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+const nodeExternals = require('webpack-node-externals');
 module.exports = {
   /*
   ** Headers of the page
@@ -30,15 +31,40 @@ module.exports = {
         javascriptEnabled: true
       }
     },
-    extend (config, { isDev, isClient }) {
+    // extend (config, { isDev, isClient }) {
+    //   if (isDev && isClient) {
+    //     config.module.rules.push({
+    //       enforce: 'pre',
+    //       test: /\.(js|vue)$/,
+    //       loader: 'eslint-loader',
+    //       exclude: /(node_modules)/
+    //     })
+    //   }
+    // }
+    // fronted
+    extend(config, { isDev, isClient, isServer }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
           exclude: /(node_modules)/
-        })
+        });
       }
+      // if (isServer) {
+      //   config.externals = [
+      //     nodeExternals({ // whitelist
+      //       allowlist: [/es6-promise|\.(?!(?:js|json)$).{1,5}$/i, /^vue-echarts/]
+      //     })
+      //   ];
+      // }
+      // config.plugins.push(
+      //   new webpack.ProvidePlugin({
+      //     jQuery: 'jquery',
+      //     $: 'jquery',
+      //     'window.jQuery': 'jquery'
+      //   })
+      // );
     }
   },
   plugins: [
@@ -55,7 +81,7 @@ module.exports = {
   ],
   axios: {
     proxy: true,
-    prefix: '/api', // baseURL
+    // prefix: '/api', // baseURL
     credentials: true
   },
   proxy: {
